@@ -1,5 +1,6 @@
 function createNav() {
-    homeButton = document.querySelector('#home-button');
-    menuButton = document.querySelector('#menu-button');
-    aboutButton = document.querySelector('#about-button');
+    const navbar = document.querySelector('nav');
+    const homeButton = document.querySelector('#home-button');
+    const menuButton = document.querySelector('#menu-button');
+    const aboutButton = document.querySelector('#about-button');
 }
