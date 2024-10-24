@@ -40,14 +40,24 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url("./images/pastabackground.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+#content {
+    flex-grow: 1;
+}
+
 /* NAVIGATION BAR */
+header {
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
 nav {
     position: fixed;
     width: 100%;
@@ -81,4 +91,33 @@ nav img {
     border: none;
     color: var(--sienna);
     cursor: pointer;
+}
+
+/* Home Page */
+.home-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Bodoni Moda SC", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0px 120px;
+}
+
+.about-card {
+    width: 50%;
+    background-color: rgba(31, 29, 29, 0.719);
+    padding: 24px;
+}
+
+.hours-card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: end;
+}
+
+.hours-heading {
+    font-weight: 800;
 }
