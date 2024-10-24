@@ -31,6 +31,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* COMMON STYLING */
 :root {
+    --nav-color: #262322ec;
     --black: #262322;
     --brown: #63372C;
     --sienna: #C97D60;
@@ -40,12 +41,28 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url("./images/pastabackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* NAVIGATION BAR */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 48px;
     padding: 16px;
+    background-color: var(--nav-color);
+}
+
+nav button {
+    font-family: "Bodoni Moda SC";
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: var(--sienna);
+    cursor: pointer;
 }
