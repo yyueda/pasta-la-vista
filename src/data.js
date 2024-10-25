@@ -1,9 +1,9 @@
-import aglioOlio from "./src/images/aglio-olio.png";
-import carbonara from "./src/images/carbonara.png";
-import linguineVongole from "./src/images/linguine-vongole.png";
-import beefRagu from "./src/images/beef-ragu.png";
-import penneArrabbiata from "./src/images/penne-arrabbiata.png";
-import mushroomRisotto from "./src/images/truffle-mushroom-risotto.png";
+import aglioOlio from "./images/aglio-olio.png";
+import carbonara from "./images/carbonara.png";
+import linguineVongole from "./images/linguine-vongole.png";
+import beefRagu from "./images/beef-ragu.png";
+import penneArrabbiata from "./images/penne-arrabbiata.png";
+import mushroomRisotto from "./images/truffle-mushroom-risotto.png";
 
 class Dish {
 

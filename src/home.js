@@ -1,8 +1,14 @@
-function createNav() {
+import createMenuPage from "./menu.js";
+
+function initialiseNav() {
     const navbar = document.querySelector('nav');
     const homeButton = document.querySelector('#home-button');
     const menuButton = document.querySelector('#menu-button');
     const aboutButton = document.querySelector('#contact-button');
+
+    menuButton.addEventListener('click', () => {
+        createMenuPage();
+    });
 }
 
 function createAboutCard() {
@@ -73,6 +79,7 @@ function createHomePage() {
     homeContainer.appendChild(createHoursCard());
 
     homeContainer.classList.add('home-container');
+    initialiseNav();
 }
 
 export default createHomePage;

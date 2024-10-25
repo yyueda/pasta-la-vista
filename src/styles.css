@@ -40,7 +40,7 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("./images/pastabackground.jpg");
     background-size: cover;
     background-position: center;
@@ -49,11 +49,13 @@ body {
 
 #content {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 /* NAVIGATION BAR */
 header {
-    height: 20%;
+    height: 20vh;
 }
 
 nav {
@@ -93,7 +95,7 @@ nav img {
 
 /* Home Page */
 .home-container {
-    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,4 +121,33 @@ nav img {
 
 .hours-heading {
     font-weight: 800;
+}
+
+/* Menu Page */
+.menu-container {
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+
+.menu-item img {
+    width: 150px;
+    height: auto;
+    border-radius: 20%;
+}
+
+.menu-item p {
+    text-align: center;
+    width: 50%;
 }
