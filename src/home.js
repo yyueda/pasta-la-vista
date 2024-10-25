@@ -1,16 +1,3 @@
-import createMenuPage from "./menu.js";
-
-function initialiseNav() {
-    const navbar = document.querySelector('nav');
-    const homeButton = document.querySelector('#home-button');
-    const menuButton = document.querySelector('#menu-button');
-    const aboutButton = document.querySelector('#contact-button');
-
-    menuButton.addEventListener('click', () => {
-        createMenuPage();
-    });
-}
-
 function createAboutCard() {
     const aboutCard = document.createElement('div');
     const aboutParagraph = document.createElement('p');
@@ -74,12 +61,12 @@ function createHomePage() {
     const content = document.querySelector('#content');
     const homeContainer = document.createElement('div');
 
+    content.innerHTML = '';
     content.append(homeContainer);
     homeContainer.appendChild(createAboutCard());
     homeContainer.appendChild(createHoursCard());
 
     homeContainer.classList.add('home-container');
-    initialiseNav();
 }
 
 export default createHomePage;
