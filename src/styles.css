@@ -97,19 +97,20 @@ nav img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: "Bodoni Moda SC", sans-serif;
     font-size: 1.2rem;
     color: white;
     padding: 0px 120px;
 }
 
 .about-card {
+    font-family: "Quicksand", sans-serif;
     width: 50%;
     background-color: rgba(31, 29, 29, 0.719);
     padding: 24px;
 }
 
 .hours-card {
+    font-family: "Bodoni Moda SC", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 32px;
