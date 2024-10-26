@@ -31,7 +31,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* COMMON STYLING */
 :root {
-    --nav-color: #262322ec;
+    --nav-color: rgba(0, 0, 0, 0.5);
     --black: #262322;
     --brown: #63372C;
     --sienna: #C97D60;
@@ -51,6 +51,7 @@ body {
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* NAVIGATION BAR */
@@ -105,9 +106,9 @@ nav img {
 }
 
 .about-card {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Zilla Slab", sans-serif;
     width: 50%;
-    background-color: rgba(31, 29, 29, 0.719);
+    background-color: var(--nav-color);
     padding: 24px;
 }
 
@@ -129,7 +130,7 @@ nav img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 28px;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: var(--nav-color); */
 }
 
 .menu-item {
@@ -137,7 +138,7 @@ nav img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Zilla Slab", sans-serif;
     color: white;
 }
 
@@ -150,4 +151,40 @@ nav img {
 .menu-item p {
     text-align: center;
     width: 50%;
+}
+
+/* CONTACT PAGE */
+.contact-container {
+    width: 50%;
+    font-family: "Zilla Slab", sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--nav-color);
+    padding: 24px;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fields-container label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.fields-container span {
+    font-size: 0.8rem;
+    color: rgb(243, 56, 56);
+}
+
+.fields-container input,
+.fields-container textarea {
+    background-color: #f0f4f8;
 }
