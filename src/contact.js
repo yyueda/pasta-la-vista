@@ -4,7 +4,7 @@ function createContactCard() {
     const phoneNum = document.createElement('p');
 
     address.textContent = '10 Bayfront Ave, Tower 1, Level 100, Singapore 018956';
-    phoneNum.textContent = '+65 61331 48713';
+    phoneNum.textContent = '+65 6123 4567';
 
     contactDetails.appendChild(address);
     contactDetails.appendChild(phoneNum);
