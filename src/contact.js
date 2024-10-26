@@ -99,6 +99,16 @@ function createContactForm() {
     messageTextarea.required = true;
     fieldsContainer.appendChild(messageTextarea);
 
+    // Submit button
+    const submitButton = document.createElement('button');
+    submitButton.textContent = 'Submit';
+    submitButton.classList.add('submit-btn');
+    fieldsContainer.appendChild(submitButton);
+
+    submitButton.addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+
     return formContainer;
 }
 
