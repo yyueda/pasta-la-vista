@@ -15,3 +15,6 @@ It features:
 - HTML & CSS: Core structure and styling
 - JavaScript: For interactive elements
 - Webpack: Module bundler to optimize and bundle JavaScript, CSS, and other assets.
+
+## **Live Demo**  
+Check out the live application [here](https://yyueda.github.io/restaurant-page/).
