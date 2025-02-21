@@ -17,4 +17,4 @@ It features:
 - Webpack: Module bundler to optimize and bundle JavaScript, CSS, and other assets.
 
 ## **Live Demo**  
-Check out the live application [here](https://yyueda.github.io/restaurant-page/).
+Check out the live application [here](https://yyueda.github.io/pasta-la-vista/).
